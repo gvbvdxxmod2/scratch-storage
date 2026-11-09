@@ -46,6 +46,12 @@ const AssetType = {
         name: 'Font',
         runtimeFormat: DataFormat.TTF,
         immutable: true
+    },
+    JavaScript: {
+        contentType: 'text/javascript',
+        name: 'Javascript',
+        runtimeFormat: DataFormat.JS,
+        immutable: true
     }
 };
 

@@ -3,15 +3,15 @@
   "version": "2.0.0",
   "description": "Load and store project and asset files for Scratch 3.0",
   "license": "BSD-3-Clause",
-  "homepage": "https://github.com/TurboWarp/scratch-storage#readme",
+  "homepage": "https://github.com/gvbvdxxmod2/scratch-storage#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/TurboWarp/scratch-storage.git"
+    "url": "https://github.com/gvbvdxxmod2/scratch-storage.git"
   },
   "main": "./dist/node/scratch-storage.js",
   "browser": "./dist/web/scratch-storage.js",
   "scripts": {
-    "postinstall": "npm run build",
+    "postinstall": "yarn run install --ignore-engines && yarn run build",
     "build": "webpack --progress --colors --bail",
     "coverage": "tap ./test/{unit,integration}/*.js --coverage --coverage-report=lcov",
     "test": "npm run test:lint && jest \"test[\\\\/](unit|integration)\"",

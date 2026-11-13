@@ -11,7 +11,7 @@
   "main": "./dist/node/scratch-storage.js",
   "browser": "./dist/web/scratch-storage.js",
   "scripts": {
-    "postinstall": "yarn run install --ignore-engines && yarn run build",
+    "postinstall": "yarn install --ignore-engines && yarn run build",
     "build": "webpack --progress --colors --bail",
     "coverage": "tap ./test/{unit,integration}/*.js --coverage --coverage-report=lcov",
     "test": "npm run test:lint && jest \"test[\\\\/](unit|integration)\"",
